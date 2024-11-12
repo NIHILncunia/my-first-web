@@ -1,0 +1,24 @@
+<form action="/settings" method="post">
+  <div class="form-group">
+    <label for="notifications">알림 설정:</label>
+    <input type="checkbox" id="notifications" name="notifications" checked>
+  </div>
+
+  <div class="form-group">
+    <label for="theme">테마 선택:</label>
+    <input type="radio" id="light" name="theme" value="light" checked> 라이트
+    <input type="radio" id="dark" name="theme" value="dark"> 다크
+  </div>
+
+  <div class="form-group">
+    <label for="volume">볼륨 조절:</label>
+    <input type="range" id="volume" name="volume" min="0" max="100" value="50">
+  </div>
+
+  <div class="form-group">
+    <label for="favcolor">테마 색상:</label>
+    <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+  </div>
+
+  <button type="submit">저장하기</button>
+</form>
