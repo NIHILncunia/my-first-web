@@ -1,0 +1,19 @@
+<form action="/submit-event" method="post">
+  <label for="event-date">이벤트 날짜:</label>
+  <input type="date" id="event-date" name="event-date" min="2023-01-01" max="2024-12-31"><br><br>
+
+  <label for="event-time">이벤트 시작 시간:</label>
+  <input type="time" id="event-time" name="event-time" min="09:00" max="18:00" step="1800"><br><br>
+
+  <label for="event-month">이벤트 월:</label>
+  <input type="month" id="event-month" name="event-month"><br><br>
+
+  <label for="event-week">이벤트 주:</label>
+  <input type="week" id="event-week" name="event-week"><br><br>
+
+  <label for="event-datetime">이벤트 전체 일정:</label>
+  <input type="datetime-local" id="event-datetime" name="event-datetime" min="2023-01-01T09:00"
+    max="2023-12-31T18:00"><br><br>
+
+  <input type="submit" value="예약하기">
+</form>
