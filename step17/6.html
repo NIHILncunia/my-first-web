@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>파일 업로드 폼</title>
+</head>
+
+<body>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <label for="userName">이름:</label>
+    <input type="text" id="userName" name="userName" required><br><br>
+
+    <label for="fileUpload">업로드할 파일 선택:</label>
+    <input type="file" id="fileUpload" name="uploadedFile" accept=".jpg,.png,.pdf" multiple><br><br>
+
+    <input type="hidden" name="session_id" value="xyz456">
+
+    <button type="reset">초기화</button>
+    <button type="submit">파일 업로드</button>
+  </form>
+</body>
+
+</html>
